@@ -1,0 +1,297 @@
+/* animation */
+
+@keyframes anim
+{
+from {color: #FF962D;}
+to {color: #DF24F4;}
+}
+
+@-moz-keyframes anim /* Firefox */
+{
+from {color: #FF962D;}
+to {color: #DF24F4;}
+}
+
+@-webkit-keyframes anim /* Safari and Chrome */
+{
+from {color: #FF962D;}
+to {color: #DF24F4;}
+}
+
+@-o-keyframes anim /* Opera */
+{
+from {color: #FF962D;}
+to {color: #DF24F4;}
+}
+
+@keyframes anim2
+{
+from {color: #B26920;}
+to {color: #7D3BAF;}
+}
+
+@-moz-keyframes anim2 /* Firefox */
+{
+from {color: #B26920;}
+to {color: #7D3BAF;}
+}
+
+@-webkit-keyframes anim2 /* Safari and Chrome */
+{
+from {color: #B26920;}
+to {color: #7D3BAF;}
+}
+
+@-o-keyframes anim2 /* Opera */
+{
+from {color: #B26920;}
+to {color: #7D3BAF;}
+}
+
+/* css génériques */
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#333;
+	line-height:1.5em;
+	padding:0px;
+	margin:0px;
+	background:url(../img/bg-maison.png) top center repeat-x;
+	background-color:#aaa;
+	
+}
+img {
+	border:0;
+	padding:0px;
+	margin:0px;
+}
+a {
+	text-decoration:none;	
+}
+.clear {
+	clear:both;
+}
+.wrapper {
+	width:100%;
+	position:static;
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+/* css entête */
+.logo{
+	-moz-transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+	-o-transform:rotate(30deg);
+	transform:rotate(30deg);
+}
+#header *{
+	padding:0px;
+	margin:0px;
+	
+}
+#header {
+	display: block;
+	width:980px;
+	margin:0 auto; 
+}
+
+#header img.logo {
+	float:left;
+}
+#header .titre {
+	float:left;
+}
+#header H1,H2 {
+	padding:0px;
+	margin:0px;
+}
+hgroup H1 {
+	color:#FF962D;
+	text-shadow : 1px 1px 1px #000;
+	animation:anim 5s;
+	-moz-animation:anim 5s; /* Firefox */
+	-webkit-animation:anim 5s; /* Safari and Chrome */
+	-o-animation:anim 5s; /* Opera */
+}
+hgroup H2 {
+	color:#B26920;
+	text-shadow : 1px 1px 1px #000;
+	animation:anim2 5s;
+	-moz-animation:anim2 5s; /* Firefox */
+	-webkit-animation:anim2 5s; /* Safari and Chrome */
+	-o-animation:anim2 5s; /* Opera */
+}
+
+/* css menu */
+#menu *{
+	padding:0px;
+	margin:0px;
+}
+#menu {
+	display: block;
+	width:980px;
+	margin:0 auto;
+}
+#menu ul{
+	width:100%;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#menu ul li{
+	float:left;
+	width:25%;
+	background-color:#333;
+	text-align:center;
+	height:46px;
+	margin:0;
+	padding:0;
+	-moz-transition:opacity 1s linear;
+	-webkit-transition:opacity 1s linear;
+	-o-transition:opacity 1s linear;
+	transition:opacity 1s linear;
+}
+#menu ul li:hover{
+	background-color:#666;
+	-moz-transform:rotate(-17deg);
+	-webkit-transform:rotate(-7deg);
+	-o-transform:rotate(-7deg);
+	transform:rotate(-7deg);
+	
+}
+#menu ul li a{
+	color:#fff;
+	font-weight:bold;
+	font-size:15px;
+	width:100%;
+	padding:10px;
+	display:block; /*permet de rendre la zone cliquable sur tout le bloc et nom pas sur la zone de texte uniquement., inline-block pour des liens les uns à cotés des autres.*/
+	text-shadow:2px 2px 2px #000;
+}
+
+#menu ul li a:hover{
+	text-shadow:4px 4px 2px #000;
+}
+
+/* css footer */
+#footer *{
+	padding:0px;
+	margin:0px;
+}
+#footer {
+	display: block;
+	width:980px;
+	margin:0 auto;
+}
+#footer ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#footer ul li{
+	float:left;
+	height:25px;
+	margin:0;
+	padding:0;
+}
+#footer ul li:hover{
+	background-color:rgba(255,255,255,0.5);
+}
+#footer ul li a{
+	color:#666;
+	font-size:10px;
+	display:block; /*permet de rendre la zone cliquable sur tout le bloc et nom pas sur la zone de texte uniquement., inline-block pour des liens les uns à cotés des autres.*/
+	margin:0;
+	padding:0 5px;
+}
+#footer ul li a:hover{
+	color:#000;
+	width:100%;
+	
+}
+
+/* css article */
+
+article {
+	display: block;
+	width:980px;
+	margin:0 auto;
+	padding:0;
+}
+article header h1{
+	font-size:30px;
+	font-weight:bold;
+	border:0px solid #000;
+	padding:0;
+	margin:10px 0;
+}
+article p,form{
+	background-color:rgba(255,255,255,0.8);
+	width:960px;
+	border:1px solid #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	box-shadow: 2px 2px 5px #222;
+	padding:10px;
+	margin-top:10px;
+}
+article p video
+{
+	display: block;
+	margin:0 auto;
+}
+
+article p.soustitre{
+	width:300px;
+	padding:5px;
+	height:25px;
+	margin-left:10px;
+	margin-bottom:0;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	
+}
+
+/* css form */
+article form *{
+	padding:0px;
+	margin:0px;
+}
+article form {
+	display: block;
+	margin:0 auto;
+}
+article form label{
+	display:block;
+	width:300px;
+	height:25px;
+	float:left;
+	font-size:12px;
+	padding-left:10px;
+}
+article form input{
+	width:200px;
+	height:16px;
+	border:1px solid #999;
+	font-size:11px;
+	margin-left:5px;
+	padding:2px;
+}
+article form input.submit{
+	font-weight:bold;
+	height:25px;
+	cursor:pointer;
+}
+
+article form input.checkbox{
+	font-weight:bold;
+	border:0;
+}

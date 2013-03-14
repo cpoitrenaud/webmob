@@ -1,3 +1,4 @@
+/* mes animations */
 @keyframes monanim {
 0%   {color: red;}
 25%  {color: yellow;}
@@ -56,7 +57,7 @@
 100% {color: green;}
 }
 
-
+/* css génériques */
 
 body {
     background-color: transparent;
