@@ -39,9 +39,16 @@ myGps.init = function()  {
     myGps.update();
     return this;
 }
-myGps.update = function()  {
-    navigator.geolocation.getCurrentPosition(myGps._set, myGps._onError);
-    return this;
+myGps.update = function(callback)  {
+	if (typeof callback=="function")
+	{
+		navigator.geolocation.getCurrentPosition(callback, myGps._onError); //fonction de rappel
+	}
+	else
+	{
+		navigator.geolocation.getCurrentPosition(myGps._set, myGps._onError);
+	}
+	return this;
 }
 myGps._set = function(position)  {
     var infopos = "";
