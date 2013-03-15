@@ -1,0 +1,68 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": "[\r\n    {login:\"user1\",password:\"pass1\"},\r\n    {login:\"user2\",password:\"pass2\"}\r\n]",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "MyJsonStore"
+    },
+    "designerId": "81c488f6-6713-4497-809b-3cceb10cbbf6",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy"
+            },
+            "designerId": "59cb9ad3-c246-4f52-8ca0-58eecaea10cb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader"
+                    },
+                    "designerId": "599a6092-4e4d-4857-a776-3ca0c5633a20"
+                }
+            ]
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "login",
+                "designer|userClassName": "field"
+            },
+            "designerId": "7a5fd884-9c17-4e68-bca3-194e2543552c"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "password",
+                "designer|userClassName": "field1"
+            },
+            "designerId": "1b06eb5a-3cb9-48bd-9119-25a62b9a2799"
+        }
+    ]
+}

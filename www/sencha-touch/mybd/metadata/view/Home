@@ -1,0 +1,130 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|animation": "fade",
+        "ui": "light",
+        "designer|userClassName": "Home",
+        "layout": "card",
+        "scrollable": true
+    },
+    "designerId": "6c1f23a6-4d37-49c8-9322-3b7e1433f86c",
+    "cn": [
+        {
+            "type": "Ext.TitleBar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "top",
+                "ui": "light",
+                "designer|userClassName": "MyTitleBar",
+                "scrollable": false,
+                "title": "Bienvenue"
+            },
+            "designerId": "7700a3ad-956a-4abf-b85d-521b66dc4268"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "html": "Mon titre",
+                "designer|userClassName": "MyContainer"
+            },
+            "designerId": "f5e804d0-19fb-4feb-919a-9d9eccfa9822"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "container|pack": "center",
+                "docked": "bottom",
+                "designer|userClassName": "MyToolbar",
+                "title": ""
+            },
+            "designerId": "a0b6764e-c934-4803-b0ee-75a1ec7d1542",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "docked": null,
+                        "itemId": "bthome",
+                        "ui": "small",
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "bottom",
+                        "iconCls": "home",
+                        "iconMask": true,
+                        "text": "Home"
+                    },
+                    "designerId": "19269810-4f36-40f9-8867-c5ca5ff11935",
+                    "cn": [
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "handler",
+                                "fn": "handler",
+                                "designer|params": [
+                                    "button",
+                                    "event"
+                                ],
+                                "implHandler": [
+                                    "console.log(button);\r",
+                                    "console.log(event);\r",
+                                    "button.setText(\"Accueil\");"
+                                ]
+                            },
+                            "designerId": "c3dbf45c-9308-48d9-a9c5-4d78f4ca65ef"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "docked": null,
+                        "itemId": "btfavoris",
+                        "ui": "small",
+                        "designer|userClassName": "MyButton",
+                        "iconAlign": "bottom",
+                        "iconCls": "favorites",
+                        "iconMask": true,
+                        "text": "Favoris"
+                    },
+                    "designerId": "e5b9291c-8310-4f88-8be1-40b34d942039"
+                }
+            ]
+        }
+    ]
+}
